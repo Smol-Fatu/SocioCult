@@ -1,0 +1,107 @@
+.menuItem:hover{
+	-fx-background-color:  #4d4d4d;
+	-fx-border-color: WHITE;
+	-fx-border-width: 0px 0px 2px 0px;
+}
+
+.sidebarItem:hover{
+	-fx-background-color:  #376E6F;
+	-fx-border-color: WHITE;
+	-fx-border-width: 0px 0px 0px 3px;
+}
+.pane_1{
+	/*-fx-background-color:748CF1;*/
+	-fx-border-width: 2px 2px 2px 2px;
+	-fx-border-radius: 30px;
+	-fx-background-radius: 30px;
+	-fx-border-style:solid ;
+	/*-fx-border-color:748CF1;*/
+}
+.pane_1:hover{
+	/*-fx-background-color:748CF1;*/
+	-fx-border-width: 3px 3px 3px 3px;
+	-fx-border-radius: 30px;
+	-fx-background-radius: 30px;
+	-fx-border-style:solid ;
+	-fx-border-color: #4d4d4d;
+	
+}
+.label_RecentEvents{
+	-fx-border-width: 0px 0px 2px 0px;
+	-fx-border-style:solid ;
+}
+.label_RecentEvents:hover{
+	-fx-border-color: #4d4d4d;
+	-fx-border-width: 0px 0px 3px 0px;
+	-fx-border-style:solid ;
+}
+
+/* .label_OR{
+	-fx-border-width: 0px 0px 0px 0px;
+	-fx-border-style:solid ;
+}
+.label_OR:hover{
+	-fx-border-color: #4d4d4d;
+	-fx-border-width: 3px 0px 3px 0px;
+	-fx-border-style:solid ;
+}*/
+.registerButn{
+	-fx-background-color: #376E6F; 
+	-fx-background-radius: 20px;
+}
+.registerButn:hover{
+	-fx-background-color:   #37606f;
+}
+.CalendarBoxes{
+	-fx-background-color:#376E6F;
+	-fx-border-width: 1px 1px 1px 1px;
+	-fx-border-radius: 30px;
+	-fx-background-radius: 30px;
+	-fx-border-style:solid ;
+	-fx-border-color:#376E6F;
+}
+.CalendarBoxes:hover{
+	-fx-background-color:#508ca2;
+	-fx-border-width: 1px 1px 1px 1px;
+	-fx-border-radius: 30px;
+	-fx-background-radius: 30px;
+	-fx-border-style:solid ;
+	-fx-border-color: #376E6F;
+	
+}
+.label_Societies{
+	-fx-background-color:#376E6F;
+	-fx-border-style:none ;
+	-fx-border-radius:25px;
+}
+.presidentButtons{
+	-fx-background-color: #B33563;
+	-fx-background-radius: 20px;
+}
+.presidentButtons:hover{
+	-fx-background-color:  #B54470;
+}
+.PresidentCalendarBoxes{
+	-fx-background-color:#B33563;
+	-fx-border-width: 1px 1px 1px 1px;
+	-fx-border-radius: 30px;
+	-fx-background-radius: 30px;
+	-fx-border-style:solid ;
+	-fx-border-color:#B33563;
+}
+.PresidentCalendarBoxes:hover{
+	-fx-background-color:#B54470;
+	-fx-border-width: 1px 1px 1px 1px;
+	-fx-border-radius: 30px;
+	-fx-background-radius: 30px;
+	-fx-border-style:solid ;
+	-fx-border-color: #B33563;
+	
+}
+.adminButtons{
+	-fx-background-color:  #67166E;
+	-fx-background-radius: 20px;
+}
+.adminButtons:hover{
+	-fx-background-color:  #826982;
+}

@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menuSampleController">
+   <children>
+      <BorderPane layoutX="31.0" layoutY="113.0" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="65.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="218.0" layoutY="14.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #40B5AD;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fx:id="Exit" fitHeight="20.0" fitWidth="20.0" layoutX="680.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@exit.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@sms1.jpg" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="40.0" fitWidth="80.0" layoutX="40.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@sms2.jpg" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </Pane>
+                  <HBox layoutX="261.0" layoutY="-17.0" prefHeight="41.0" prefWidth="524.0" style="-fx-background-color: #4d4d4d;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+                     <children>
+                        <JFXButton onAction="#switchToDashboard" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" stylesheets="@application.css" text="Dashboard" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@dash.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton onAction="#switchToRegistrationScreen" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" stylesheets="@application.css" text="Registeration" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-student-registration-24%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton onAction="#switchToSocietiesScreen" prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" stylesheets="@application.css" text="Societies" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-user-groups-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton prefHeight="38.0" prefWidth="136.0" styleClass="menuItem" stylesheets="@application.css" text="Event Calendar" textFill="WHITE">
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-calendar-32%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <Pane layoutX="-31.0" layoutY="-60.0" prefHeight="41.0" prefWidth="176.0" style="-fx-background-color: #4d4d4d;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="26.0">
+                     <children>
+                        <Label fx:id="Menu" layoutX="14.0" layoutY="9.0" text="MENU" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@menu.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                        <Label fx:id="menuBack" layoutX="14.0" layoutY="9.0" text="MENU" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="13.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@menu.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Label>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </top>
+         <left>
+            <AnchorPane fx:id="Slider" prefHeight="362.0" prefWidth="176.0" style="-fx-background-color: #376E6F;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox layoutY="23.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="53.0">
+                     <children>
+                        <JFXButton alignment="TOP_LEFT" onAction="#switchToDashboard" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" stylesheets="@application.css" text="Dashboard" textFill="#da7b93">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@dash.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="TOP_LEFT" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" stylesheets="@application.css" text="Societies" textFill="#da7b93">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-user-groups-32.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton alignment="TOP_LEFT" onAction="#switchToRegistrationScreen" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" stylesheets="@application.css" text="Registeration" textFill="#da7b93">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-student-registration-24%20(1).png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="LogOutBtn" alignment="TOP_LEFT" onAction="#switchToStudentLoginScreen" prefHeight="38.0" prefWidth="176.0" styleClass="sidebarItem" stylesheets="@application.css" text="LogOut" textFill="#da7b93">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="22.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@icons8-logout-24.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </left>
+         <center>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="30.0" prefWidth="60.0" styleClass="label_RecentEvents" stylesheets="@application.css" text="Calendar">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Label>
+                  <Pane layoutX="67.0" layoutY="52.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d1" alignment="CENTER" layoutX="4.0" layoutY="8.0" prefHeight="44.0" prefWidth="52.0" text="28" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="127.0" layoutY="52.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d2" alignment="CENTER" layoutX="6.0" layoutY="8.0" prefHeight="45.0" prefWidth="49.0" text="29" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="187.0" layoutY="52.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d3" layoutX="20.0" layoutY="16.0" text="30" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="247.0" layoutY="52.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d4" alignment="CENTER" layoutX="9.0" layoutY="9.0" prefHeight="42.0" prefWidth="42.0" text="1" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="Talent Hunt" />
+                           </tooltip>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="306.0" layoutY="51.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d5" alignment="CENTER" layoutX="10.0" layoutY="8.0" prefHeight="44.0" prefWidth="40.0" text="2" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="Adventure Gala" />
+                           </tooltip>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="366.0" layoutY="51.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d6" alignment="CENTER" layoutX="7.0" layoutY="10.0" prefHeight="43.0" prefWidth="44.0" text="3" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="ISYWSC" />
+                           </tooltip>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="67.0" layoutY="112.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d7" alignment="CENTER" layoutX="9.0" layoutY="8.0" prefHeight="44.0" prefWidth="43.0" text="4" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                           <tooltip>
+                              <Tooltip text="ISYWSC" />
+                           </tooltip>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="127.0" layoutY="112.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d8" layoutX="25.0" layoutY="16.0" text="5" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="187.0" layoutY="112.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d9" layoutX="25.0" layoutY="16.0" text="6" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="246.0" layoutY="112.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d10" layoutX="20.0" layoutY="16.0" text="7" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="306.0" layoutY="112.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d11" layoutX="20.0" layoutY="16.0" text="8" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="366.0" layoutY="112.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d12" layoutX="20.0" layoutY="16.0" text="9" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="67.0" layoutY="172.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d13" layoutX="20.0" layoutY="14.0" text="10" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="127.0" layoutY="172.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d14" layoutX="19.0" layoutY="16.0" text="11" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="187.0" layoutY="172.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d15" layoutX="20.0" layoutY="16.0" text="12" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="247.0" layoutY="172.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d16" layoutX="19.0" layoutY="16.0" text="13" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="307.0" layoutY="172.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d17" layoutX="20.0" layoutY="16.0" text="14" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="367.0" layoutY="172.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d18" layoutX="20.0" layoutY="16.0" text="15" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="67.0" layoutY="232.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d19" layoutX="20.0" layoutY="16.0" text="16" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="127.0" layoutY="232.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d20" layoutX="20.0" layoutY="16.0" text="17" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="187.0" layoutY="232.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d21" layoutX="20.0" layoutY="16.0" text="18" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="247.0" layoutY="232.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d22" layoutX="19.0" layoutY="16.0" text="19" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="307.0" layoutY="232.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d23" layoutX="20.0" layoutY="16.0" text="20" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="367.0" layoutY="232.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d24" layoutX="20.0" layoutY="16.0" text="21" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="67.0" layoutY="292.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d25" layoutX="20.0" layoutY="16.0" text="22" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="127.0" layoutY="292.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d26" layoutX="20.0" layoutY="16.0" text="23" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="187.0" layoutY="292.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d27" layoutX="20.0" layoutY="16.0" text="24" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="247.0" layoutY="292.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d28" layoutX="20.0" layoutY="16.0" text="25" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="307.0" layoutY="292.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d29" layoutX="20.0" layoutY="16.0" text="26" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="367.0" layoutY="292.0" prefHeight="60.0" prefWidth="60.0" styleClass="CalendarBoxes" stylesheets="@application.css">
+                     <children>
+                        <Label fx:id="d30" layoutX="20.0" layoutY="16.0" text="27" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label fx:id="label" alignment="CENTER" layoutX="80.0" layoutY="367.0" prefHeight="54.0" prefWidth="334.0" text="." textAlignment="CENTER">
+                     <font>
+                        <Font name="System Italic" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
